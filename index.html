@@ -16,7 +16,6 @@
       </div>
       <nav class="nav">
         <a class="active" href="./index.html">Runway</a>
-        <a href="./admin.html">Backstage</a>
         <a class="btn primary" id="primaryCTA" href="#" target="_blank" rel="noopener">Contactar</a>
       </nav>
     </div>
@@ -28,10 +27,12 @@
         <!-- Optional hero image via data/config.json -> heroImage -->
         <img id="heroImg" alt="" style="display:none" onload="this.style.display='block'">
       </div>
+
       <div class="hero-overlay">
-        <div>
+        <div class="hero-copy">
+          <p class="hero-kicker">Colección</p>
           <h2>Nahual</h2>
-          <p>Hechas por manos de mujeres salvadoreñas.</p>
+          <p class="hero-sub">Hechas por manos de mujeres salvadoreñas.</p>
         </div>
       </div>
     </section>
@@ -66,7 +67,8 @@
     <div class="modal" role="dialog" aria-modal="true" aria-label="Detalle de prenda">
       <div class="modal-header">
         <strong>Detalle</strong>
-        <button class="btn" type="button" onclick="document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}))">Cerrar</button>
+        <button class="btn" type="button"
+          onclick="document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape'}))">Cerrar</button>
       </div>
       <div class="modal-content">
         <div class="modal-media" id="modalMedia"></div>
